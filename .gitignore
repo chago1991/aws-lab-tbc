@@ -1,0 +1,8 @@
+# Ignore OS-specific files
+.DS_Store
+credentials
+tbc-lab.pem
+
+# Ignore IDE-specific files
+*.sublime-workspace
+*.vscode

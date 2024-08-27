@@ -1,0 +1,13 @@
+[Unit]
+Description=Elastic IP Failover Service
+After=network.target
+
+[Service]
+WorkingDirectory=/home/ubuntu/workdir/
+User=ubuntu
+Group=ubuntu
+ExecStart=/home/ubuntu/workdir/eip_failover.sh
+Restart=always
+
+[Install]
+WantedBy=multi-user.target
